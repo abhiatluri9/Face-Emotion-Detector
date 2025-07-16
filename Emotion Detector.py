@@ -2,8 +2,18 @@ import os
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 import cv2
 import numpy as np
+import json
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import img_to_array
+
+#configure JSON file
+with open("config.json") as f:
+    config = json.load(f)
+
+image_size = tuple(config["image_size"])
+emotion_labels = config["emotion_labels"]
+model_path = config["model_path"]
+haar_path = config["haar_cascade_path"]
 
 # Load your trained model
 model = load_model("emotion_model.h5")
@@ -53,3 +63,5 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+
+
