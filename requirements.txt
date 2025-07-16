@@ -1,0 +1,12 @@
+
+🛠 Requirements
+
+- Python 3.8+
+- TensorFlow
+- Keras
+- OpenCV
+- NumPy
+
+- Also pre-download fer-2013 Dataset
+
+
