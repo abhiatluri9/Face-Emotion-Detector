@@ -8,5 +8,6 @@
 - NumPy
 
 - Also pre-download fer-2013 Dataset
+- https://www.kaggle.com/datasets/msambare/fer2013 (this is the link to fer-2013 dataset)
 
 
